@@ -1,2 +1,2 @@
 # form-validation
-A simple form calidation using yup and react-hook-form
+A simple form validation using yup and react-hook-form
