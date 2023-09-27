@@ -22,8 +22,8 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Authenticate with Vercel
-      run: npx vercel login
+    # - name: Authenticate with Vercel
+    #   run: npx vercel login
 
     - name: Build and deploy to Vercel
       run: |
