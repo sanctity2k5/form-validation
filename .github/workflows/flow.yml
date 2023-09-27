@@ -24,8 +24,6 @@ jobs:
 
     - name: Authenticate with Vercel
       run: npx vercel login --token ${{ secrets.VERCEL_TOKEN }}
-      env:
-        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }} # Pass the Vercel token as an environment variable
 
     - name: Build and deploy to Vercel
       run: |
