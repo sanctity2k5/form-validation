@@ -1,0 +1,38 @@
+name: Deploy to Vercel
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Use Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14 # Choose the Node.js version you need
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Authenticate with Vercel
+      run: npx vercel login
+
+    - name: Build and deploy to Vercel
+      run: |
+        # Build your project (replace with your build command)
+        npm run build
+
+        # Deploy to Vercel
+        npx vercel --prod
+      env:
+        VERCEL_TOKEN: process.env.VERCEL_TOKEN # Use a GitHub secret for security
+
+# Don't forget to add your GitHub secret 'VERCEL_TOKEN' containing your Vercel token.
