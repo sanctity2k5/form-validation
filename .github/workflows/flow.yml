@@ -22,8 +22,8 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    # - name: Authenticate with Vercel
-    #   run: npx vercel login
+    - name: Authenticate with Vercel
+      run: npx vercel login --token ${{ secrets.VERCEL_TOKEN }}
 
     - name: Build and deploy to Vercel
       run: |
@@ -32,7 +32,3 @@ jobs:
 
         # Deploy to Vercel
         npx vercel --prod
-      env:
-        VERCEL_TOKEN: secrets.env.VERCEL_TOKEN # Use a GitHub secret for security
-
-# Don't forget to add your GitHub secret 'VERCEL_TOKEN' containing your Vercel token.
