@@ -1,0 +1,87 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Getting Started with Next.js",
+      "content": "Next.js is a powerful framework for building React applications.",
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "title": "State Management in React",
+      "content": "Learn about different state management options in React.",
+      "authorId": 2
+    },
+    {
+      "id": 3,
+      "title": "Creating a RESTful API with Express.js",
+      "content": "Build a RESTful API with Express.js and MongoDB.",
+      "authorId": 3
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "john_doe",
+      "name": "John Doe"
+    },
+    {
+      "id": 2,
+      "username": "jane_smith",
+      "name": "Jane Smith"
+    },
+    {
+      "id": 3,
+      "username": "bob_jones",
+      "name": "Bob Jones"
+    },
+    {
+      "name": "A hna",
+      "email": "ugevu@ma.ge",
+      "phonenumber": "4124083809",
+      "password": "0Pa$$4uM^t323",
+      "id": 4
+    },
+    {
+      "name": "A hna",
+      "email": "ugevu@ma.ge",
+      "phonenumber": "4124083809",
+      "password": "0Pa$$4uM^t323",
+      "id": 5
+    },
+    {
+      "name": "Vtaallkmhtnfh",
+      "email": "pijemti@wacuk.mt",
+      "phonenumber": "8189177062",
+      "password": "0Pa$$4uM^t343",
+      "id": 6
+    },
+    {
+      "name": "OnyiioLabs",
+      "email": "olabdev50@gmail.com",
+      "phonenumber": "123345354657",
+      "password": "dsgdretyuytikbvxczgdxgh",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "userId": 2,
+      "text": "Great tutorial! Thanks for sharing."
+    },
+    {
+      "id": 2,
+      "postId": 1,
+      "userId": 3,
+      "text": "I found this very helpful too!"
+    },
+    {
+      "id": 3,
+      "postId": 2,
+      "userId": 1,
+      "text": "Looking forward to more articles on this topic."
+    }
+  ]
+}
